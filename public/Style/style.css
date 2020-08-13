@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h1 {
+    padding-left: 5%;
+}
+p {
+    padding-left: 10%;
+    
+}
+table {
+    margin-left: 15%;
+    width: 400px;
+   /* border-spacing: 40px; */
+}
+th{
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    
+}
+th, td {
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #ee7752;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #e73c7e;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #23a6d5;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #23d5ab;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #12be12;
+}

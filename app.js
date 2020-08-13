@@ -21,3 +21,5 @@ app.use("/", express.static(public))
 app.listen(port, () => {
   console.log(`Hello World app listening at http://localhost:${port}`)
 })
+
+//didn't change anything, just tried to better understand
