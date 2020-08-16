@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbell Loader</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Barbell Loader</h1>
+    
+    <form >
+        <label>Load Barbell:</label>
+        <input type="text" name="inputBarbell" id = "weight" onkeypress="enter(event)">
+        <input type="button" value="Load" id = "submit" >
+    </form>
+
+
+    
+
+    <ul>
+        <li>45lb Plates: <p id="fortyFiveOutput"></p></li>
+        <li>35lb Plates: <p id="thirtyFiveOutput"></p></li>
+        <li>25lb Plates: <p id="twentyFiveOutput"></p></li>
+        <li>10lb Plates: <p id="tenOutput"></p></li>
+        <li>5lb Plates: <p id="fiveOutput"></p></li>
+        <li>2.5lb Plates: <p id="twoHalfOutput"></p></li>
+    </ul>
+
+<script src="math.js"></script>
+</body>
+</html>
