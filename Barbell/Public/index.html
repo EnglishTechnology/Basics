@@ -9,14 +9,11 @@
 <body>
     <h1>Barbell Loader</h1>
     
-    <form >
+    <form name = "form"  onsubmit="validateWeight()">
         <label>Load Barbell:</label>
-        <input type="text" name="inputBarbell" id = "weight" onkeypress="enter(event)">
-        <input type="button" value="Load" id = "submit" >
+        <input type="number" pattern="[0-9]+" name="inputBarbell" id = "weight" required>
+        <input type="submit" value="Load" id = "submit" >
     </form>
-
-
-    
 
     <ul>
         <li>45lb Plates: <p id="fortyFiveOutput"></p></li>

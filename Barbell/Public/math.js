@@ -17,11 +17,21 @@ function calcBarbell(){
     document.getElementById("fiveOutput").innerHTML = five;
     document.getElementById("twoHalfOutput").innerHTML = twoHalf;
 }
-// call function with click
-document.getElementById("submit").addEventListener("click", calcBarbell);
-// call function with enter
-function enter(event) {
-    var key_board_keycode = event.which || event.keyCode;
-    if(key_board_keycode == 13)
-    {event.preventDefault(); calcBarbell();}
+
+// Validation
+function validateWeight() {
+    var x = document.forms["form"]["inputBarbell"].value;
+    if (x % 5 !== 0 && x < 50) {
+        alert("A minimum weight of 50lbs is required for a barbell and some plates, and weight must be in multiples of 5, as the lightest plates to load on each side are 2.5lbs");
+        return false;
+    } else if (x % 5 !== 0) {
+        alert("Weight must be in multiples of 5, as the lightest plates to load on each side are 2.5lbs");
+        return false;
+    } else if (x < 50) {
+        alert("A minimum weight of 50lbs is required for a barbell and some plates");
+        return false;
+    } else {
+        event.preventDefault()
+        calcBarbell();
+    }
 }
