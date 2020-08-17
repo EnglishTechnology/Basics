@@ -1,0 +1,82 @@
+body {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    background: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom -85px;
+}
+
+h2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+h4{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#weight {
+    width: 56px;
+}
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li::first-line { 
+    color: white;
+    }
+li {
+    
+    height: 160px;
+    width: 160px;
+    Background: url(/img/plate.png);;
+    background-size: cover;
+    border-radius: 50%; 
+    padding: 2em;
+}
+#fortyFiveList {
+    line-height: 57px;
+    height: 200px;
+    width: 200px;
+}
+#thirtyFiveList {
+    line-height: 50px;
+    height: 180px;
+    width: 180px;
+}
+#twentyFiveList {
+    line-height: 43px;
+    height: 160px;
+    width: 160px;
+}
+#tenList {
+    line-height: 36px;
+    height: 140px;
+    width: 140px;
+}
+#fiveList {
+    line-height: 30px;
+    height: 120px;
+    width: 120px;
+}
+#twoHalfList {
+    line-height: 23px;
+    height: 100px;
+    width: 100px;
+}

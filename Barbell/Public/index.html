@@ -7,22 +7,26 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Barbell Loader</h1>
-    
-    <form name = "form"  onsubmit="validateWeight()">
-        <label>Load Barbell:</label>
-        <input type="number" pattern="[0-9]+" name="inputBarbell" id = "weight" required>
+    <h2>Barbell Loader</h2>
+
+    <div id= "inputContainer">
+    <form name = "form" onsubmit="validateWeight()">
+        <label>Enter a weight in pounds: </label><input type="number" pattern="[0-9]+" name="inputBarbell" id = "weight" required><br>
+        <label>Do you have 35lb plates? </label><input type="checkbox" name="thirtyFive" id = "thirtyFive">
         <input type="submit" value="Load" id = "submit" >
     </form>
+    </div>
 
     <ul>
-        <li>45lb Plates: <p id="fortyFiveOutput"></p></li>
-        <li>35lb Plates: <p id="thirtyFiveOutput"></p></li>
-        <li>25lb Plates: <p id="twentyFiveOutput"></p></li>
-        <li>10lb Plates: <p id="tenOutput"></p></li>
-        <li>5lb Plates: <p id="fiveOutput"></p></li>
-        <li>2.5lb Plates: <p id="twoHalfOutput"></p></li>
+        <li id= "fortyFiveList">45lb Plates: <p id="fortyFiveOutput"></p></li>
+        <li id= "thirtyFiveList">35lb Plates: <p id="thirtyFiveOutput"></p></li>
+        <li id= "twentyFiveList">25lb Plates: <p id="twentyFiveOutput"></p></li>
+        <li id= "tenList">10lb Plates: <p id="tenOutput"></p></li>
+        <li id= "fiveList">5lb Plates: <p id="fiveOutput"></p></li>
+        <li id= "twoHalfList">2.5lb Plates: <p id="twoHalfOutput"></p></li>
     </ul>
+
+    <h4 id="onEach">(on each side)</h4>
 
 <script src="math.js"></script>
 </body>
